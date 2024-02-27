@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration version="10.11" appVersion="24.2.6" publisher="Turbo.net">
+  <Expiration daysLimit="0" expirationDate="2099-01-01T00:00:00Z" expirationWarningDays="0">
+    <ExpiredMessage>The evaluation period for this application has expired. Please contact your system administrator or the application publisher for assistance.</ExpiredMessage>
+    <ExpirationWarning>This application will expire in %d days.</ExpirationWarning>
+    <UnreachableWarning>The current time could not be validated with the time server. Please check your network connection and try again.</UnreachableWarning>
+  </Expiration>
+  <Output diagnosticMode="false" includeRuntimeDotNetImage="false" allowFullIsolation="false" enableSync="false" enableAutoUpdate="false" showLaunchSettings="false" isolationLevel="WriteCopy" hub="https://turbo.net" isolationOptions="MergeUser" />
+  <Msi outputMsiPath="" title="" subject="" keywords="" productName="" productVersion="" manufacturer="" productLanguage="1033" author="" description="" manufacturerUrl="" autoBuild="False" isolatePerUser="True" applicationFolder="" upgradePreviousVersion="True" productCode="{7015156A-0519-4B2B-AAC1-B582E853563C}" upgradeCode="{466CC567-C25D-400E-8DED-12042232E2EC}" componentId="{CF004FCB-9469-47B3-A7C5-37CCE489E63B}" />
+  <Network>
+    <Proxy enableTCP="false" enableUDP="false" />
+  </Network>
+  <Clipboard isolationMode="Merge" />
+  <Certificate />
+  <EnvironmentVariableExGlobalSettings isolationMode="WriteCopy" />
+  <Dependencies />
+  <Requirements />
+  <Packages trimDotNet="True">
+    <Java />
+  </Packages>
+  <VirtualizationSettings suppressBranding="True" deleteSandbox="False" shutdownProcessTree="False" enhancedDEPCompatibility="False" notifyProcessStarts="False" enableLegacySecurityPassthrough="False" trimUACManifest="False" forceFIPSCompliance="False" forceReadShareFiles="False" isolateWindowClasses="False" readOnlyVirtualization="False" disableXenocodeCommandLine="False" suppressSandboxCollisionCheck="False" subsystem="Inherit" targetArchitecture="x64" sandboxPath="@APPDATALOCAL@\Turbo.net\Sandbox\@TITLE@\@VERSION@" exeOptimization="False" compressPayload="False" forceIndicateRunningElevated="False" launchChildProcsAsUser="True" enableDRMCompatibility="False" faultExecutablesIntoSandbox="True" minStackSize="0" minSandboxSpaceAvail="-1" honorWow6464AccessFlag="True" suppressPopups="False" hideShellWindow="False" isDriverSVM="False" forceEntryLayerIsolation="False" stubExeCachePath="" spoonCachePath="" waitForChildOnly="True" httpUrlPassthrough="False" mergeStartupDir="False" allowGlobalWindowHooks="False" breakIdenticalSendMessageRecursion="False" extendedWinXPCompatibility="False" isolateProcessNames="False" isolateNonSystemDrives="False" isolateNetworkShares="False" disableProxySupportForRouteMaps="False" isolateDDE="False" aggressiveRegistrySandboxCachePolicy="False" chromiumSupport="False" handleExplorerShellEx="False">
+    <ChildProcessVirtualization spawnVm="true" spawnExternalComServers="false" />
+  </VirtualizationSettings>
+  <XLayers xlayerSearchPattern="" />
+  <NamedObjectIsolation enabled="False" />
+  <Dns />
+  <Device>
+    <MachineName />
+    <MachineSid />
+    <NetworkAdapters />
+    <ComputerSystemProduct />
+  </Device>
+  <EnvironmentStats />
+  <WorkingDirectory option="StartupFileDirectory" specifiedDirectory="@APPDIR@" />
+  <DisabledVmSettings />
+  <StartupShims />
+  <ShutdownShims />
+  <Scripts />
+  <ActiveDirectory />
+  <CustomMetadata />
+  <StandardMetadata />
+  <SplashImage path="" transparency="Magenta" seconds="6" />
+  <StartupFiles>
+    <StartupFile node="@PROGRAMFILES@\AutoHotkey\SciTE\SciTE.exe" tag="" commandLine="" default="True" architecture="AnyCpu" />
+  </StartupFiles>
+  <Layers>
+    <Layer name="Default">
+      <Filesystem>
+        <Directory name="@APPDATA@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@APPDATACOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@APPDATALOCAL@" isolation="Merge" readOnly="False" hide="False" noSync="True" />
+        <Directory name="@APPDATALOCALLOW@" isolation="Merge" readOnly="False" hide="False" noSync="True" />
+        <Directory name="@APPDIR@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@DESKTOP@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@DESKTOPCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@DOCUMENTS@" isolation="Merge" readOnly="False" hide="False" noSync="False">
+          <Directory name="AutoHotkey" isolation="Full" readOnly="False" hide="False" noSync="False">
+            <File name=".venv_Python_Mang.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\.venv_Python_Mang.ahk" />
+            <Directory name="Lib" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name=".gitignore" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\.gitignore" />
+              <File name=".gitmodules" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\.gitmodules" />
+              <File name="AHKpy - Copy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\AHKpy - Copy.ahk" />
+              <File name="AHKpy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\AHKpy.ahk" />
+              <File name="archive.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\archive.ahk" />
+              <File name="AutoResizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\AutoResizer.ahk" />
+              <File name="Base64.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Base64.ahk" />
+              <File name="BSTR.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\BSTR.ahk" />
+              <File name="ButtonIcon.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ButtonIcon.ahk" />
+              <File name="ButtonStyle.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ButtonStyle.ahk" />
+              <File name="CGdip.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CGdip.ahk" />
+              <File name="CheckPic.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CheckPic.ahk" />
+              <File name="child_process.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\child_process.ahk" />
+              <File name="Chrome.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Chrome.ahk" />
+              <File name="cJSON.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\cJSON.ahk" />
+              <File name="CLR.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CLR.ahk" />
+              <File name="ComObjDll.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ComObjDll.ahk" />
+              <File name="ComVar.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ComVar.ahk" />
+              <File name="Conver2GuiResizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Conver2GuiResizer.ahk" />
+              <File name="convert2GuiResizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\convert2GuiResizer.ahk" />
+              <File name="convert2Resizer copy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\convert2Resizer copy.ahk" />
+              <File name="convert2Resizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\convert2Resizer.ahk" />
+              <File name="convertToGuiResizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\convertToGuiResizer.ahk" />
+              <File name="CreateImageButton.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CreateImageButton.ahk" />
+              <File name="Crypt.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Crypt.ahk" />
+              <File name="CSHARP_REQUESTS_DLL - Copy - Copy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CSHARP_REQUESTS_DLL - Copy - Copy.ahk" />
+              <File name="CSHARP_REQUESTS_DLL - Copy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CSHARP_REQUESTS_DLL - Copy.ahk" />
+              <File name="CSHARP_REQUESTS_DLL.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\CSHARP_REQUESTS_DLL.ahk" />
+              <File name="ctypes.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ctypes.ahk" />
+              <File name="customSetButton.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\customSetButton.ahk" />
+              <File name="darkMode.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\darkMode.ahk" />
+              <File name="deepclone.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\deepclone.ahk" />
+              <File name="DownloadAsync.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\DownloadAsync.ahk" />
+              <File name="DWMThumbnail.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\DWMThumbnail.ahk" />
+              <File name="exampleDLLnoObject.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\exampleDLLnoObject.ahk" />
+              <File name="FixIE.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\FixIE.ahk" />
+              <File name="FormatMessage.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\FormatMessage.ahk" />
+              <File name="Gdip_All.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Gdip_All.ahk" />
+              <File name="Gdip1.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Gdip1.ahk" />
+              <File name="Gen 3 Buttons.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Gen 3 Buttons.ahk" />
+              <File name="getSetDefineProp_.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\getSetDefineProp_.ahk" />
+              <File name="GuiButtonIcon.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\GuiButtonIcon.ahk" />
+              <File name="GuiReSizer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\GuiReSizer.ahk" />
+              <File name="guiUtils.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\guiUtils.ahk" />
+              <File name="gzip.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\gzip.ahk" />
+              <File name="heap.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\heap.ahk" />
+              <File name="HOWTO_DOTNET_DLL_CS_ - 1.7z" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\HOWTO_DOTNET_DLL_CS_ - 1.7z" />
+              <File name="HTMLControl.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\HTMLControl.ahk" />
+              <File name="import tkinter as tk.py" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\import tkinter as tk.py" />
+              <File name="import_v1lib.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\import_v1lib.ahk" />
+              <File name="JSON.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\JSON.ahk" />
+              <File name="Jsons.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Jsons.ahk" />
+              <File name="Lib.7z" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Lib.7z" />
+              <File name="LICENSE" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\LICENSE" />
+              <File name="ListProcessModules.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ListProcessModules.ahk" />
+              <File name="LoadScript.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\LoadScript.ahk" />
+              <File name="MCode.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\MCode.ahk" />
+              <File name="MemoryViewer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\MemoryViewer.ahk" />
+              <File name="Monitor.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Monitor.ahk" />
+              <File name="MouseHook.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\MouseHook.ahk" />
+              <File name="My Altered Gdip Lib.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\My Altered Gdip Lib.ahk" />
+              <File name="nameof.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\nameof.ahk" />
+              <File name="Neutron.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Neutron.ahk" />
+              <File name="ObjShare.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ObjShare.ahk" />
+              <File name="OLDJSON.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\OLDJSON.ahk" />
+              <File name="ONMESSAGE_LBDOWN_LBMOVE.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ONMESSAGE_LBDOWN_LBMOVE.ahk" />
+              <File name="OpenFolderAndSelect.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\OpenFolderAndSelect.ahk" />
+              <File name="print.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\print.ahk" />
+              <File name="Promise.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Promise.ahk" />
+              <File name="QPC.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\QPC.ahk" />
+              <File name="request.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\request.ahk" />
+              <File name="requests.dll" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\OneDrive\Documents\AutoHotkey\Lib\requests.dll" />
+              <File name="requests_compiled.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\requests_compiled.ahk" />
+              <File name="RtlAdjustPrivilege.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\RtlAdjustPrivilege.ahk" />
+              <File name="SetButton.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\SetButton.ahk" />
+              <File name="SetupDi.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\SetupDi.ahk" />
+              <File name="Socket.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Socket.ahk" />
+              <File name="sort.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\sort.ahk" />
+              <File name="struct.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\struct.ahk" />
+              <File name="Thread.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Thread.ahk" />
+              <File name="UIA.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\UIA.ahk" />
+              <File name="UIA_Browser.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\UIA_Browser.ahk" />
+              <File name="UseGDIP.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\UseGDIP.ahk" />
+              <File name="utils.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\utils.ahk" />
+              <File name="WebSocket.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\WebSocket.ahk" />
+              <File name="WebView2.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\WebView2.ahk" />
+              <File name="Winhttp.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\Winhttp.ahk" />
+              <File name="WinHttpRequest.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\WinHttpRequest.ahk" />
+              <File name="ws-min.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\ws-min.ahk" />
+              <File name="YAML.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\YAML.ahk" />
+              <Directory name=".vscode" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="settings.json" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\Lib\.vscode\settings.json" />
+              </Directory>
+            </Directory>
+            <Directory name="SciTE" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="$LASTUPDATE" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\$LASTUPDATE" />
+              <File name="$VER" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\$VER" />
+              <File name="_config.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\_config.properties" />
+              <File name="_extensions.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\_extensions.properties" />
+              <File name="_platform.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\_platform.properties" />
+              <File name="AhkAbbrevs.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\AhkAbbrevs.properties" />
+              <File name="Autorun.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Autorun.ahk" />
+              <File name="SciTE.session" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\SciTE.session" />
+              <File name="SciTEUser.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\SciTEUser.properties" />
+              <File name="user.ahk.api" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\user.ahk.api" />
+              <File name="UserLuaScript.lua" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\UserLuaScript.lua" />
+              <File name="UserToolbar.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\UserToolbar.properties" />
+              <Directory name="Extensions" isolation="Full" readOnly="False" hide="False" noSync="False" />
+              <Directory name="Macros" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Create new class.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Macros\Create new class.macro" />
+                <File name="Create new function.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Macros\Create new function.macro" />
+                <File name="If statement.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Macros\If statement.macro" />
+              </Directory>
+              <Directory name="Scriptlets" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="(Example) Run or activate Notepad.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Scriptlets\(Example) Run or activate Notepad.scriptlet" />
+                <File name="Progress text.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Scriptlets\Progress text.scriptlet" />
+              </Directory>
+              <Directory name="Settings" isolation="Full" readOnly="False" hide="False" noSync="False" />
+              <Directory name="Styles" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Blank.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\Blank.style.properties" />
+                <File name="Classic.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\Classic.style.properties" />
+                <File name="HatOfGod.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\HatOfGod.style.properties" />
+                <File name="Light.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\Light.style.properties" />
+                <File name="Noir.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\Noir.style.properties" />
+                <File name="PSPad.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\PSPad.style.properties" />
+                <File name="tidRich_Zenburn.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\tidRich_Zenburn.style.properties" />
+                <File name="VisualStudio.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE\Styles\VisualStudio.style.properties" />
+              </Directory>
+            </Directory>
+            <Directory name="SciTE117357203" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="$LASTUPDATE" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\$LASTUPDATE" />
+              <File name="$VER" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\$VER" />
+              <File name="_config.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\_config.properties" />
+              <File name="_extensions.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\_extensions.properties" />
+              <File name="_platform.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\_platform.properties" />
+              <File name="AhkAbbrevs.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\AhkAbbrevs.properties" />
+              <File name="Autorun.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Autorun.ahk" />
+              <File name="SciTE.session" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\SciTE.session" />
+              <File name="SciTEDebug.ini" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\SciTEDebug.ini" />
+              <File name="SciTEUser.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\SciTEUser.properties" />
+              <File name="UserLuaScript.lua" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\UserLuaScript.lua" />
+              <File name="UserToolbar.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\UserToolbar.properties" />
+              <Directory name="Extensions" isolation="Full" readOnly="False" hide="False" noSync="False" />
+              <Directory name="Macros" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Create new class.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Macros\Create new class.macro" />
+                <File name="Create new function.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Macros\Create new function.macro" />
+                <File name="If statement.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Macros\If statement.macro" />
+              </Directory>
+              <Directory name="Scriptlets" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="(Example) Run or activate Notepad.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Scriptlets\(Example) Run or activate Notepad.scriptlet" />
+                <File name="Progress text.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Scriptlets\Progress text.scriptlet" />
+              </Directory>
+              <Directory name="Settings" isolation="Full" readOnly="False" hide="False" noSync="False" />
+              <Directory name="Styles" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Blank.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Styles\Blank.style.properties" />
+                <File name="SciTE4AutoHotkey Dark.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Styles\SciTE4AutoHotkey Dark.style.properties" />
+                <File name="SciTE4AutoHotkey Light.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\OneDrive\Documents\AutoHotkey\SciTE117357203\Styles\SciTE4AutoHotkey Light.style.properties" />
+              </Directory>
+            </Directory>
+          </Directory>
+        </Directory>
+        <Directory name="@DOCUMENTSCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@DOWNLOADS@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@FAVORITES@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@FAVORITESCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@MUSIC@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@MUSICCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PICTURES@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PICTURESCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROFILE@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROFILECOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROGRAMFILES@" isolation="Merge" readOnly="False" hide="False" noSync="False">
+          <Directory name="AutoHotkey" isolation="Full" readOnly="False" hide="False" noSync="False">
+            <File name="AutoHotkey.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\AutoHotkey.exe" />
+            <File name="AutoHotkeyv1.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\AutoHotkeyv1.exe" />
+            <File name="license.txt" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\license.txt" />
+            <File name="WindowSpy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\WindowSpy.ahk" />
+            <Directory name="Compiler" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="Ahk2Exe.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" />
+            </Directory>
+            <Directory name="Lib" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="pyAr.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\Lib\pyAr.ahk" />
+              <File name="UIA.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\Lib\UIA.ahk" />
+              <File name="UIA_Browser.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\Lib\UIA_Browser.ahk" />
+            </Directory>
+            <Directory name="SciTE" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="$REVISION" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\$REVISION" />
+              <File name="$SETUP" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\$SETUP" />
+              <File name="$VER" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\$VER" />
+              <File name="ahk.api" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk.api" />
+              <File name="ahk.commands.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk.commands.properties" />
+              <File name="ahk.keywords.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk.keywords.properties" />
+              <File name="ahk.lua" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk.lua" />
+              <File name="ahk.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk.properties" />
+              <File name="ahk2.api" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk2.api" />
+              <File name="ahk2.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\ahk2.properties" />
+              <File name="InternalAHK.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\SciTE\InternalAHK.exe" />
+              <File name="License.txt" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\License.txt" />
+              <File name="lua.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\lua.properties" />
+              <File name="other.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\other.properties" />
+              <File name="platforms.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\platforms.properties" />
+              <File name="SciLexer.dll" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\SciTE\SciLexer.dll" />
+              <File name="SciTE.chm" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\SciTE.chm" />
+              <File name="SciTE.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\SciTE\SciTE.exe" />
+              <File name="SciTEGlobal.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\SciTEGlobal.properties" />
+              <File name="TestSuite.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\TestSuite.ahk" />
+              <File name="tillagoto.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tillagoto.properties" />
+              <File name="toolbar.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar.properties" />
+              <File name="toolicon.icl" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\SciTE\toolicon.icl" />
+              <Directory name="locales" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Deutsch.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\Deutsch.locale.properties" />
+                <File name="English.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\English.locale.properties" />
+                <File name="Español.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\Español.locale.properties" />
+                <File name="Français.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\Français.locale.properties" />
+                <File name="Italiano.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\Italiano.locale.properties" />
+                <File name="Polski.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\Polski.locale.properties" />
+                <File name="日本語.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\日本語.locale.properties" />
+                <File name="简体中文.locale.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\locales\简体中文.locale.properties" />
+              </Directory>
+              <Directory name="newuser" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="_config.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\_config.properties" />
+                <File name="_extensions.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\_extensions.properties" />
+                <File name="AhkAbbrevs.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\AhkAbbrevs.properties" />
+                <File name="Autorun.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Autorun.ahk" />
+                <File name="SciTEUser.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\SciTEUser.properties" />
+                <File name="user.ahk.api" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\user.ahk.api" />
+                <File name="UserLuaScript.lua" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\UserLuaScript.lua" />
+                <File name="UserToolbar.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\UserToolbar.properties" />
+                <Directory name="Macros" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="Create new class.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Macros\Create new class.macro" />
+                  <File name="Create new function.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Macros\Create new function.macro" />
+                  <File name="If statement.macro" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Macros\If statement.macro" />
+                </Directory>
+                <Directory name="Scriptlets" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="(Example) Run or activate Notepad.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Scriptlets\(Example) Run or activate Notepad.scriptlet" />
+                  <File name="Progress text.scriptlet" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Scriptlets\Progress text.scriptlet" />
+                </Directory>
+                <Directory name="Styles" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="Blank.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\Blank.style.properties" />
+                  <File name="Classic.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\Classic.style.properties" />
+                  <File name="HatOfGod.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\HatOfGod.style.properties" />
+                  <File name="Light.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\Light.style.properties" />
+                  <File name="Noir.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\Noir.style.properties" />
+                  <File name="PSPad.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\PSPad.style.properties" />
+                  <File name="tidRich_Zenburn.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\tidRich_Zenburn.style.properties" />
+                  <File name="VisualStudio.style.properties" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\newuser\Styles\VisualStudio.style.properties" />
+                </Directory>
+              </Directory>
+              <Directory name="toolbar" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="ComInterface.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\ComInterface.ahk" />
+                <File name="Extensions.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Extensions.ahk" />
+                <File name="PlatformRead.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\PlatformRead.ahk" />
+                <File name="ProfileUpdate.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\ProfileUpdate.ahk" />
+                <File name="SciTEDirector.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\SciTEDirector.ahk" />
+                <File name="SciTEMacros.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\SciTEMacros.ahk" />
+                <File name="Toolbar.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Toolbar.ahk" />
+                <Directory name="Lib" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="CEscape.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\CEscape.ahk" />
+                  <File name="ComDispatch.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ComDispatch.ahk" />
+                  <File name="ComDispTable.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ComDispTable.ahk" />
+                  <File name="ComRemote.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ComRemote.ahk" />
+                  <File name="ComVar.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ComVar.ahk" />
+                  <File name="CUnescape.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\CUnescape.ahk" />
+                  <File name="ExportExtension.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ExportExtension.ahk" />
+                  <File name="ExtractExtension.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\ExtractExtension.ahk" />
+                  <File name="Ini2Object.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\Ini2Object.ahk" />
+                  <File name="RemoteBuf.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\RemoteBuf.ahk" />
+                  <File name="SciUtil.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\SciUtil.ahk" />
+                  <File name="StrPutVar.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\StrPutVar.ahk" />
+                  <File name="Toolbar.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\toolbar\Lib\Toolbar.ahk" />
+                </Directory>
+              </Directory>
+              <Directory name="tools" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="$gendocs_scite" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\$gendocs_scite" />
+                <File name="__AhkVer.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\__AhkVer.ahk" />
+                <File name="ActiveWindowInfo.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\ActiveWindowInfo.ahk" />
+                <File name="Autorun.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Autorun.ahk" />
+                <File name="MsgBoxC.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\MsgBoxC.ahk" />
+                <File name="NewUser.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\NewUser.ahk" />
+                <File name="PropEdit.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\PropEdit.ahk" />
+                <File name="SciTEDebug.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SciTEDebug.ahk" />
+                <File name="SciTEDiag.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SciTEDiag.ahk" />
+                <File name="SciTEReload.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SciTEReload.ahk" />
+                <File name="SciTEUpdate.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SciTEUpdate.ahk" />
+                <File name="StyleEdit.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\StyleEdit.ahk" />
+                <File name="SUtility.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SUtility.ahk" />
+                <File name="TillaGoto.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\TillaGoto.ahk" />
+                <Directory name="GenDocs" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name=".gitignore" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\.gitignore" />
+                  <File name="default.css" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\default.css" />
+                  <File name="GenDocs.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\GenDocs.ahk" />
+                  <File name="README.md" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\README.md" />
+                  <Directory name="Demo" isolation="Full" readOnly="False" hide="False" noSync="False">
+                    <File name="ahklogo.png" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\ahklogo.png" />
+                    <File name="TestExample.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestExample.ahk" />
+                    <File name="TestLib.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib.ahk" />
+                    <File name="TestPage.md" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestPage.md" />
+                    <Directory name="TestLib-doc" isolation="Full" readOnly="False" hide="False" noSync="False">
+                      <File name="default.css" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\default.css" />
+                      <File name="index.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\index.html" />
+                      <File name="MyClass.__New.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.__New.html" />
+                      <File name="MyClass.Hello.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.Hello.html" />
+                      <File name="MyClass.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.html" />
+                      <File name="MyClass.InnerCls.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.InnerCls.html" />
+                      <File name="MyClass.Meow.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.Meow.html" />
+                      <File name="MyClass.Something.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\MyClass.Something.html" />
+                      <File name="something.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\something.html" />
+                      <File name="TestPage.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Demo\TestLib-doc\TestPage.html" />
+                    </Directory>
+                  </Directory>
+                  <Directory name="Lib" isolation="Full" readOnly="False" hide="False" noSync="False">
+                    <File name="GenerateDocs.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Lib\GenerateDocs.ahk" />
+                    <File name="Markdown2HTML.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Lib\Markdown2HTML.ahk" />
+                    <File name="PrepExample.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Lib\PrepExample.ahk" />
+                    <File name="RetrieveDocs.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Lib\RetrieveDocs.ahk" />
+                    <File name="StrStartsWith.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\GenDocs\Lib\StrStartsWith.ahk" />
+                  </Directory>
+                </Directory>
+                <Directory name="Lib" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="AHKType.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\AHKType.ahk" />
+                  <File name="Anchor.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\Anchor.ahk" />
+                  <File name="dbgp.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\dbgp.ahk" />
+                  <File name="GetSciTEInstance.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\GetSciTEInstance.ahk" />
+                  <File name="SciControl.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\SciControl.ahk" />
+                  <File name="SUpd.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\Lib\SUpd.ahk" />
+                </Directory>
+                <Directory name="SmartGUI" isolation="Full" readOnly="False" hide="False" noSync="False">
+                  <File name="grid.gif" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SmartGUI\grid.gif" />
+                  <File name="SmartGUI.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SmartGUI\SmartGUI.ahk" />
+                  <File name="SmartGUI.html" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SmartGUI\SmartGUI.html" />
+                  <File name="smartgui.icl" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SmartGUI\smartgui.icl" />
+                  <File name="splash.gif" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\SciTE\tools\SmartGUI\splash.gif" />
+                </Directory>
+              </Directory>
+            </Directory>
+            <Directory name="UX" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="AutoHotkeyUX.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\UX\AutoHotkeyUX.exe" />
+              <File name="install.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\install.ahk" />
+              <File name="install-ahk2exe.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\install-ahk2exe.ahk" />
+              <File name="installed-files.csv" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\installed-files.csv" />
+              <File name="install-version.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\install-version.ahk" />
+              <File name="launcher.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\launcher.ahk" />
+              <File name="reload-v1.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\reload-v1.ahk" />
+              <File name="reset-assoc.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\reset-assoc.ahk" />
+              <File name="ui-dash.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-dash.ahk" />
+              <File name="ui-editor.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-editor.ahk" />
+              <File name="ui-launcherconfig.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-launcherconfig.ahk" />
+              <File name="ui-newscript.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-newscript.ahk" />
+              <File name="ui-setup.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-setup.ahk" />
+              <File name="ui-uninstall.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\ui-uninstall.ahk" />
+              <File name="WindowSpy.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\WindowSpy.ahk" />
+              <Directory name="inc" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="bounce-v1.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\bounce-v1.ahk" />
+                <File name="CommandLineToArgs.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\CommandLineToArgs.ahk" />
+                <File name="common.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\common.ahk" />
+                <File name="config.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\config.ahk" />
+                <File name="CreateAppShortcut.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\CreateAppShortcut.ahk" />
+                <File name="EnableUIAccess.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\EnableUIAccess.ahk" />
+                <File name="GetGitHubReleaseAssetURL.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\GetGitHubReleaseAssetURL.ahk" />
+                <File name="HashFile.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\HashFile.ahk" />
+                <File name="identify.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\identify.ahk" />
+                <File name="identify_regex.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\identify_regex.ahk" />
+                <File name="launcher-common.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\launcher-common.ahk" />
+                <File name="README.txt" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\README.txt" />
+                <File name="ShellRun.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\ShellRun.ahk" />
+                <File name="spy.ico" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\spy.ico" />
+                <File name="ui-base.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\inc\ui-base.ahk" />
+              </Directory>
+              <Directory name="Templates" isolation="Full" readOnly="False" hide="False" noSync="False">
+                <File name="Minimal for v2.ahk" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\UX\Templates\Minimal for v2.ahk" />
+              </Directory>
+            </Directory>
+            <Directory name="v1.1.37.01" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="ANSI 32-bit.bin" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\ANSI 32-bit.bin" />
+              <File name="AutoHotkey.chm" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\AutoHotkey.chm" />
+              <File name="AutoHotkeyA32.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\AutoHotkeyA32.exe" />
+              <File name="AutoHotkeyU32.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\AutoHotkeyU32.exe" />
+              <File name="AutoHotkeyU64.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\AutoHotkeyU64.exe" />
+              <File name="Unicode 64-bit.bin" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v1.1.37.01\Unicode 64-bit.bin" />
+            </Directory>
+            <Directory name="v2.0.10" isolation="Full" readOnly="False" hide="False" noSync="False">
+              <File name="AutoHotkey.chm" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="False" source="..\..\..\Program Files\AutoHotkey\v2.0.10\AutoHotkey.chm" />
+              <File name="AutoHotkey32.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v2.0.10\AutoHotkey32.exe" />
+              <File name="AutoHotkey64.exe" isolation="Full" readOnly="False" hide="False" upgradeable="True" precacheable="True" source="..\..\..\Program Files\AutoHotkey\v2.0.10\AutoHotkey64.exe" />
+            </Directory>
+          </Directory>
+        </Directory>
+        <Directory name="@PROGRAMFILESCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROGRAMFILESCOMMONX86@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROGRAMFILESX86@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROGRAMS@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@PROGRAMSCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@STARTMENU@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@STARTMENUCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@STARTUP@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@STARTUPCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@SYSDRIVE@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@SYSTEM@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@SYSWOW64@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@TEMPLATES@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@TEMPLATESCOMMON@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@VIDEOS@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Directory name="@WINDIR@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+      </Filesystem>
+      <Registry>
+        <Key name="@HKCR@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Key name="@HKCU@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Key name="@HKLM@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+        <Key name="@HKU@" isolation="Merge" readOnly="False" hide="False" noSync="False" />
+      </Registry>
+      <EnvironmentVariables />
+      <EnvironmentVariablesEx />
+      <PortMaps />
+      <ObjectMaps />
+      <Services />
+      <Shortcuts>
+        <Folder name="Desktop" />
+        <Folder name="Programs Menu" />
+        <Folder name="SendTo" />
+      </Shortcuts>
+      <ProgIds />
+      <Extensions />
+      <DefaultPrograms />
+      <SnapshotDirectories />
+      <ShellExtensions />
+    </Layer>
+  </Layers>
+  <HarvestSettings />
+  <Id value="{2C46FAFF-7371-46C9-810F-BAF744B396F5}" />
+  <OutputLocation value="." />
+  <OutputFile value="Scite4AHKv2portable.exe" />
+  <ProjectType value="Application" />
+</Configuration>
